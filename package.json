@@ -1,0 +1,22 @@
+{
+  "name": "tutsplus-json-schema",
+  "version": "0.1.0",
+  "description": "Code for JSON-schema tutorial on tutsplus.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epoberezkin/tutsplus-json-schema.git"
+  },
+  "author": "Evgeny Poberezkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/epoberezkin/tutsplus-json-schema/issues"
+  },
+  "homepage": "https://github.com/epoberezkin/tutsplus-json-schema#readme",
+  "dependencies": {
+    "ajv": "^2.1.3"
+  }
+}

@@ -1,0 +1,85 @@
+[
+  { "human": true },
+  {
+    "human": true,
+    "name": "Jane",
+    "gender": "female"
+  },
+  {
+    "human": true,
+    "name": "Jane",
+    "DOB": "1985-08-12"
+  },
+  {
+    "human": true,
+    "gender": "female",
+    "DOB": "1985-08-12"
+  },
+  {
+    "model": "TX1000"
+  },
+  {
+    "made": "2013-08-29"
+  },
+  {
+    "human": 1,
+    "name": "Jane",
+    "gender": "female",
+    "DOB": "1985-08-12"
+  },
+  {
+    "human": false,
+    "name": "Jane",
+    "gender": "female",
+    "DOB": "1985-08-12"
+  },
+  {
+    "human": true,
+    "name": null,
+    "gender": "female",
+    "DOB": "1985-08-12"
+  },
+  {
+    "human": true,
+    "name": "Jane",
+    "gender": "woman",
+    "DOB": "1985-08-12"
+  },
+  {
+    "human": true,
+    "name": "Jane",
+    "gender": "female",
+    "DOB": 19850812
+  },
+  {
+    "human": true,
+    "name": "Jane",
+    "gender": "female",
+    "DOB": "19850812"
+  },
+  {
+    "model": 1000,
+    "made": "2013-08-29"
+  },
+  {
+    "model": "TX1000",
+    "made": 20130829
+  },
+  {
+    "model": "TX1000",
+    "made": "20130829"
+  },
+  {
+    "human": true,
+    "name": "Jane",
+    "gender": "female",
+    "DOB": "1985-08-12",
+    "model": "TX1000"
+  },
+  {
+    "name": "Jane",
+    "model": "TX1000",
+    "made": "20130829"
+  },
+  "not object"
+]

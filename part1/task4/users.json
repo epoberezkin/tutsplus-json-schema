@@ -1,0 +1,65 @@
+[
+  {
+    "comment": "invalid, should be male",
+    "personal": {
+      "gender": "female"
+    }
+  },
+  {
+    "comment": "invalid, should be younger than 21 or older than 60",
+    "personal": {
+      "age": 24,
+      "gender": "male"
+    }
+  },
+  {
+    "comment": "invalid, should not be married",
+    "personal": {
+      "age": 60,
+      "gender": "male"
+    },
+    "connections": [
+      {
+        "connType": "relative",
+        "relation": "wife"
+      }
+    ]
+  },
+  {
+    "comment": "invalid, should be 2 or less connections",
+    "personal": {
+      "age": 60,
+      "gender": "male"
+    },
+    "connections": [ {}, {}, {} ]
+  },
+  {
+    "comment": "invalid, should be 2 or less feeds",
+    "personal": {
+      "age": 60,
+      "gender": "male"
+    },
+    "feeds": {
+      "news": true,
+      "sport": true,
+      "fashion": false
+    }
+  },
+  {
+    "personal": {
+      "name": "John Smith",
+      "age": 65,
+      "gender": "male"
+    },
+    "connections": [
+      {
+        "connType": "friend",
+        "name": "Robert Jones"
+      }
+    ],
+    "feeds": {
+      "news": true,
+      "sport": true
+    }
+  }
+]

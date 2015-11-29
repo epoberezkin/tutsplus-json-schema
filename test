@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -e
+
+node part1/task1/validate
+node part1/task2/validate
+node part1/task3/validate
+node part1/task4/validate
+node part1/task5/validate
