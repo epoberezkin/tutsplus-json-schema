@@ -1,0 +1,128 @@
+{
+  "level": 1,
+  "parent_id": null,
+  "visitors": "all",
+  "color": "white",
+  "pages": [
+    {
+      "page_id": 1,
+      "short_name": "home",
+      "display_name": "Home",
+      "path": "/home",
+      "navigation": {
+        "level": 2,
+        "parent_id": 1,
+        "color": "blue",
+        "pages": [
+          {
+            "page_id": 11,
+            "short_name": "headlines",
+            "display_name": "Latest headlines",
+            "path": "/home/latest",
+            "navigation": {
+              "level": 3,
+              "parent_id": 11,
+              "color": "white",
+              "pages": [
+                {
+                  "page_id": 111,
+                  "short_name": "latest_all",
+                  "display_name": "All",
+                  "path": "/home/latest"
+                },
+                {
+                  "page_id": 112,
+                  "short_name": "latest_home",
+                  "display_name": "Home - latest",
+                  "path": "/home/latest/home"
+                },
+                {
+                  "page_id": 113,
+                  "short_name": "latest_news",
+                  "display_name": "News - latest",
+                  "path": "/home/latest/news"
+                }
+              ]
+            }
+          },
+          {
+            "page_id": 12,
+            "short_name": "events",
+            "display_name": "Events",
+            "path": "/home/events"
+          }
+        ]
+      }
+    },
+    {
+      "page_id": 2,
+      "short_name": "news",
+      "display_name": "News",
+      "path": "/news",
+      "navigation": {
+        "level": 2,
+        "parent_id": 2,
+        "color": "#00AAD2",
+        "pages": [
+          {
+            "page_id": 21,
+            "short_name": "world_news",
+            "display_name": "World news",
+            "path": "/news/world"
+          },
+          {
+            "page_id": 22,
+            "short_name": "pictures",
+            "display_name": "Pictures",
+            "path": "/news/pictures"
+          }
+        ]
+      }
+    },
+    {
+      "page_id": 3,
+      "short_name": "money",
+      "display_name": "Money",
+      "path": "/money",
+      "navigation": {
+        "level": 2,
+        "parent_id": 3,
+        "color": "#451344",
+        "pages": [
+          {
+            "page_id": 31,
+            "short_name": "markets",
+            "display_name": "Markets",
+            "path": "/money/markets"
+          },
+          {
+            "page_id": 32,
+            "short_name": "premium",
+            "display_name": "Premium subscriptions",
+            "path": "/money/premium",
+            "navigation": {
+              "level": 3,
+              "parent_id": 32,
+              "color": "red",
+              "visitors": "subscribers",
+              "pages": [
+                {
+                  "page_id": 321,
+                  "short_name": "forex",
+                  "display_name": "FOREX",
+                  "path": "/money/premium/forex"
+                },
+                {
+                  "page_id": 322,
+                  "short_name": "stocks",
+                  "display_name": "Stock exchanges",
+                  "path": "/money/premium/stocks"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "/": {
+    "/documents": {
+      "my_story~.rtf": {
+        "type": "document",
+        "application": ["Word", "TextEdit"],
+        "size": 30476
+      },
+      "invoice.xls": {
+        "type": "document",
+        "application": "Excel",
+        "size": 197038
+      }
+    },
+    "/system": {
+      "/applications": {
+        "Word": {
+          "type": "executable",
+          "size": 1725058307
+        },
+        "TextEdit": {
+          "type": "executable",
+          "size": 6431163
+        },
+        "Excel": {
+          "type": "executable",
+          "size": 1553993866
+        }
+      }
+    }
+  }
+}

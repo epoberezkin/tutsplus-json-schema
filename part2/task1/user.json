@@ -1,0 +1,5 @@
+{
+  "id": "http://mynet.com/schemas/user.json#",
+  "title": "Task 1 - User",
+  "description": "User profile with connections"
+}

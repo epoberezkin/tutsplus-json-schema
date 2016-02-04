@@ -2,8 +2,21 @@
 
 set -e
 
+echo
+echo "Part 1"
+node part1/user/validate
 node part1/task1/validate
 node part1/task2/validate
 node part1/task3/validate
 node part1/task4/validate
 node part1/task5/validate
+
+echo
+echo "Part 2"
+node part2/navigation/validate
+node part2/id_scope_change/validate.js 
+node part2/task1/validate
+node part2/task2/validate
+node part2/task3/validate
+node part2/task4/validate
+node part2/task6/validate

@@ -1,0 +1,8 @@
+{
+  "type": "integer",
+  "switch": [
+    { "if": { "minimum": 50 }, "then": { "multipleOf": 5 } },
+    { "if": { "minimum": 10 }, "then": { "multipleOf": 2 } },
+    { "if": { "maximum": 4 }, "then": false }
+  ]
+}

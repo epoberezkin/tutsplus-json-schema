@@ -1,0 +1,22 @@
+{
+  "id": "http://x.y.z/rootschema.json#",
+  "definitions": {
+    "bar": { "id": "#bar", "type": "string" }
+  },
+  "subschema": {
+    "id": "http://somewhere.else/completely.json#",
+    "definitions": {
+      "bar": { "id": "#bar", "type": "integer" }
+    },
+    "type": "object",
+    "properties": {
+      "foo": { "$ref": "#bar" }
+    }
+  },
+  "type": "object",
+  "properties": {
+    "bar": { "$ref": "#/subschema" },
+    "baz": { "$ref": "#/subschema/properties/foo" },
+    "bax": { "$ref": "http://somewhere.else/completely.json#bar" }
+  }
+}

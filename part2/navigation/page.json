@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://mynet.com/schemas/page.json#",
+  "title": "Page",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [ "page_id", "short_name", "display_name", "path" ],
+  "properties": {
+    "page_id":      { "$ref": "defs.json#positiveInteger" },
+    "short_name":   { "type": "string", "pattern": "^[a-z_]+$" },
+    "display_name": { "type": "string", "minLength": 1 },
+    "path":         { "type": "string", "pattern": "^(?:/[a-z_\\-]+)+$" },
+    "color":        { "$ref": "defs.json#color" },
+    "navigation":   { "$ref": "navigation.json#" }
+  },
+  "switch": [{
+    "if": { "required": [ "navigation" ] },
+    "then": {
+      "properties": {
+        "page_id": { "constant": { "$data": "1/navigation/parent_id" } }
+      }
+    }
+  }]
+}

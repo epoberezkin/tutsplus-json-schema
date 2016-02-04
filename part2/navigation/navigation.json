@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://mynet.com/schemas/navigation.json#",
+  "title": "Navigation",
+  "definitions": {
+    "positiveIntOrNull": {
+      "id": "#positiveIntOrNull",
+      "type": ["null", "integer"],
+      "minimum": 1
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "required": [ "level", "parent_id", "color", "pages" ],
+  "properties": {
+    "level":     { "$ref": "defs.json#positiveInteger" },
+    "parent_id": { "$ref": "#positiveIntOrNull" },
+    "visitors":  { "enum": [ "all", "subscribers", "age18" ] },
+    "color":     { "$ref": "defs.json#color" },
+    "pages":     {
+      "type": "array",
+      "items": { "$ref": "page.json#" }
+    }
+  }
+}

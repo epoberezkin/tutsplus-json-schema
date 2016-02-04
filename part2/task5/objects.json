@@ -1,0 +1,20 @@
+{
+  "valid": [
+    { "order": "asc", "list": [ 1, 3, 3, 6, 9 ] },
+    { "order": "desc", "list": [ 9, 6, 3, 3, 1 ] },
+    { "order": "asc", "list": [] },
+    { "order": "desc", "list": [] },
+    { "order": "asc", "list": [ 1 ] },
+    { "order": "desc", "list": [ 1 ] },
+    { "order": "asc", "list": [ 1, 3, 5 ] },
+    { "order": "desc", "list": [ 5, 3, 1 ] }
+  ],
+  "invalid": [
+    { "order": "asc", "list": [ 1, 3, 3, 6, 9, 10 ], "reason": "too many items" },
+    { "order": "desc", "list": [ 9, 7, 3, 6, 2 ], "reason": "not ordered" },
+    { "order": "increasing", "list": [ 1, 3, 3, 6, 9 ], "reason": "unknown order" },
+    { "order": true, "list": [ 1, 2, 3 ], "reason": "incorrect order type" },
+    { "order": "asc", "list": [ 1, "2", 3 ], "reason": "incorrect item type" },
+    { "order": "asc", "list": "1, 2, 3", "reason": "incorrect list type" }
+  ]
+}
