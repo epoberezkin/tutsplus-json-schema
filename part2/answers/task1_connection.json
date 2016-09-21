@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://mynet.com/schemas/connection.json#",
+  "title": "Task 1 - Connection",
+  "description": "User connection schema",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "user.json#/definitions/id" },
+    "name": { "type": "string", "maxLength": 128 },
+    "since": { "type": "string", "format": "date" },
+    "connType": { "type": "string" },
+    "relation": {},
+    "close": {}
+  },
+  "anyOf": [
+    {
+      "properties": {
+        "connType": { "enum": ["relative"] },
+        "relation": { "type": "string" }
+      },
+      "dependencies": {
+        "relation": {
+          "properties": {
+            "close": { "type": "boolean" }
+          },
+          "required": ["close"]
+        }
+      }
+    },
+    {
+      "properties": {
+        "connType": { "enum": ["friend", "colleague", "other"] },
+        "relation": { "not": {} },
+        "close": { "not": {} }
+      }
+    }
+  ],
+  "required": ["id", "name", "since", "connType"],
+  "additionalProperties": false
+}

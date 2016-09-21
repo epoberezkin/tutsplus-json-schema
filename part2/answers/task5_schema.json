@@ -1,0 +1,48 @@
+{
+  "title": "Task 5",
+  "description": "Schema for an object with ordered list",
+  "type": "object",
+  "required": [ "list", "order" ],
+  "properties": {
+    "order": {
+      "description": "this requirement is not necessary, but it helps to fail faster",
+      "type": "string"
+    },
+    "list": {
+      "type": "array",
+      "items": { "type": "number" }
+    }
+  },
+  "anyOf": [
+    {
+      "properties": {
+        "order": { "constant": "asc" },
+        "list": {
+          "items": [
+            {},
+            { "minimum": { "$data": "1/0" } },
+            { "minimum": { "$data": "1/1" } },
+            { "minimum": { "$data": "1/2" } },
+            { "minimum": { "$data": "1/3" } }
+          ],
+          "additionalItems": false
+        }
+      }
+    },
+    {
+      "properties": {
+        "order": { "constant": "desc" },
+        "list": {
+          "items": [
+            {},
+            { "maximum": { "$data": "1/0" } },
+            { "maximum": { "$data": "1/1" } },
+            { "maximum": { "$data": "1/2" } },
+            { "maximum": { "$data": "1/3" } }
+          ],
+          "additionalItems": false
+        }
+      }
+    }
+  ]
+}

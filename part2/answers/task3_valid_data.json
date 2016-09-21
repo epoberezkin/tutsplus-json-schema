@@ -1,0 +1,7 @@
+{
+  "foo": 1,
+  "bar": "abc",
+  "baz": true,
+  "bax": null,
+  "quux": null
+}

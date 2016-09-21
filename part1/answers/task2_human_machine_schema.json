@@ -1,0 +1,41 @@
+{
+  "title": "Task 2",
+  "description": "Validates humans and machines",
+  "type": "object",
+  "properties": {
+    "human": { "enum": [true] },
+    "name": { "type": "string" },
+    "gender": { "enum": ["female", "male"] },
+    "DOB": { "type": "string", "format": "date" },
+    "model": { "type": "string" },
+    "made": { "type": "string", "format": "date" }
+  },
+  "dependencies": {
+    "human": {
+      "required": ["human", "name", "gender", "DOB"],
+      "properties": {
+        "human": {},
+        "name": {},
+        "gender": {},
+        "DOB": {}
+      },
+      "additionalProperties": false
+    },
+    "model": {
+      "required": ["model", "made"],
+      "properties": {
+        "model": {},
+        "made": {}
+      },
+      "additionalProperties": false
+    },
+    "made": {
+      "required": ["model", "made"],
+      "properties": {
+        "model": {},
+        "made": {}
+      },
+      "additionalProperties": false
+    }
+  }
+}

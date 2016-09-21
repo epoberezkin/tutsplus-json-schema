@@ -1,6 +1,6 @@
 # Tutsplus "Validating Data with JSON-schema"
 
-These repository contains examples and tasks from the tutorial.
+These repository contains examples and tasks (with answers) from the tutorial.
 
 
 [Tutorial part 1](http://code.tutsplus.com/tutorials/validating-data-with-json-schema-part-1--cms-25343) (published on Feb 3, 2016)

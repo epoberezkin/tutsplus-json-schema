@@ -1,0 +1,10 @@
+{
+  "title": "Task 4",
+  "description": "Schema without switch keyword",
+  "type": "integer",
+  "anyOf": [
+    { "minimum": 5, "maximum": 9 },
+    { "minimum": 10, "maximum": 48, "multipleOf": 2 },
+    { "minimum": 50, "multipleOf": 5 }
+  ]
+}

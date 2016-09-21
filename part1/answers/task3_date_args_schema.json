@@ -1,0 +1,16 @@
+{
+  "title": "Task 3",
+  "description": "Date constructor arguments",
+  "type": "array",
+  "items": [
+    { "title": "year",    "type": "integer", "minimum": 1970 },
+    { "title": "month",   "type": "integer", "minimum": 0, "maximum": 11 },
+    { "title": "day",     "type": "integer", "minimum": 1, "maximum": 31 },
+    { "title": "hours",   "type": "integer", "minimum": 0, "maximum": 23 },
+    { "title": "minutes", "type": "integer", "minimum": 0, "maximum": 59 },
+    { "title": "seconds", "type": "integer", "minimum": 0, "maximum": 59 },
+    { "title": "ms",      "type": "integer", "minimum": 0, "maximum": 999 }
+  ],
+  "minItems": 2,
+  "additionalItems": false
+}

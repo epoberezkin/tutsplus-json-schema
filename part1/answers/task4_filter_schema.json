@@ -1,0 +1,31 @@
+{
+  "title": "Task 3",
+  "description": "Schema to filter users",
+  "properties": {
+    "personal": {
+      "properties": {
+        "gender": {
+          "enum": ["male"]
+        },
+        "age": {
+          "anyOf": [
+            { "maximum": 21, "exclusiveMaximum": true },
+            { "minimum": 60 }
+          ]
+        }        
+      }
+    },
+    "connections": {
+      "maxItems": 2,
+      "items": {
+        "not": {
+          "properties": {
+            "connType": { "enum": ["relative"] },
+            "relation": { "enum": ["wife"] }
+          }
+        }
+      }
+    },
+    "feeds": { "maxProperties": 2 }
+  }
+}

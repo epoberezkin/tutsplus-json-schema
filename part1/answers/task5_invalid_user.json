@@ -1,0 +1,46 @@
+{
+  "id": 64209690,
+  "name": "Jane Smith",
+  "email": "jane.smith@gmail.com",
+  "phone": "07777+888 999",
+  "address": {
+    "street": "Flat 1, 188 High Street Kensington",
+    "postcode": "W8 5AA",
+    "city": "London",
+    "house": 188
+  },
+  "personal": {
+    "DOB": "1982-08-16",
+    "age": 33,
+    "gender": "unknown"
+  },
+  "connections": [
+    {
+      "id": "035434004285760",
+      "name": "John Doe",
+      "connType": "friend",
+      "since": "2014-03-25"
+    },
+    {
+      "id": 13418315,
+      "name": "James Smith",
+      "connType": "relative",
+      "relation": "husband",
+      "close": true,
+      "since": "2012-07-03"
+    },
+    {
+      "id": "035434004285760",
+      "name": "Robert Jones",
+      "connType": "colleague",
+      "since": "2011-01-17",
+      "employer": "tutsplus"
+    }
+  ],
+  "feeds": {
+    "news": true,
+    "sport": true,
+    "fashion": 0
+  },
+  "createdAt": "2015-09-22T10:30:06.000Z"
+}
